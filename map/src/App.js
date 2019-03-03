@@ -5,7 +5,7 @@ import './App.css';
 import { Data } from './Data.js';
 
 function makeBox (x, y) {
-  const Style = {position: "absolute", top: x, left: y, height: 160, width: 150, backgroundColor: "white"};
+  const Style = {position: "absolute", top: x, left: y, height: 160, width: 150, backgroundColor: "white", };
   return Style;
 }
 
@@ -45,7 +45,7 @@ class App extends Component {
       "Saudi Arabia": false,
       "Uruguay": false,
       "Vietnam": false,
-      "World": false
+      "The World": false
     },
     prediction: 0
   }
@@ -54,16 +54,16 @@ class App extends Component {
     return (
       <div>
       <head>
-          <title> Interactive Map and CO2 Emissions </title>
+          <h1> Interactive Map and CO2 Emissions </h1>
 
         </head>
 
-        <h1> Interactive Map and CO2 Emissions </h1>
+        <h2> Interactive Map and CO2 Emissions </h2>
 
         <body>
-        <p> Our map provides information on the CO2 emissions for a few countries from around the world. Select a country to find data on emissions per capita from 1996 and 2014,
-          as well as the current population. Try to imagine the future by inputing a future year and find out what the CO2 emissions will be then if the countries emissions continue with
-          rate of the last 20 years. All data was found from The World Bank. </p>
+        <p> Our map provides information on the CO2 emissions for several countries from around the world. Select a country to find data on emissions per capita from 1996 to 2014.
+          Try to imagine the future by inputing a future year and find out what the CO2 emissions per capita will be then if the countries emissions continue with
+          the rate of the last 20 years. All data was found from The World Bank. </p>
 
         <p> For more information about global emissions, visit : </p>
         <a href="https://data.worldbank.org/indicator/EN.ATM.CO2E.PC?cid=GPD_27&name_desc=false&start=1996">World Bank World Emissions Html</a>
@@ -95,9 +95,9 @@ class App extends Component {
                        <input type="text"
                               name="years"
                               onChange={this.prediction} />
-                       <p>
-                          My prediction: {calculateFuturePolution(this.state.prediction, a, b)}
-                       </p>
+                       <h1>
+                          My prediction: {calculateFuturePolution(this.state.prediction, a, b)} metric tons per capita
+                       </h1>
                        <button onClick={this.InvertCountry(name)}> Done! </button>
                   </div>
                 )

@@ -1,15 +1,30 @@
 body {
-background-color: #f2ff05;
+background-color: #f7f776;
 color: black;
 border:
 }
 
 h1 {
   text-align: center;
-  text-decoration: underline;
-  font-family: arial ;
+  font-family: georgia ;
   font-size: 75%;
   color: black;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: georgia ;
+  font-size: 125%;
+  color: black;
+}
+
+button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 10px;
 }
 
 .App {
