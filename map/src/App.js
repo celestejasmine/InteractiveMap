@@ -61,7 +61,7 @@ class App extends Component {
         <h2> Interactive Map and CO2 Emissions </h2>
 
         <body>
-        <p> Our map provides information on the CO2 emissions for several countries from around the world. Select a country to find data on emissions per capita from 1996 to 2014.
+        <p> This map provides information on the CO2 emissions per capita for several countries from around the world. Select a country to find data on emissions per capita from 1996 to 2014.
           Try to imagine the future by inputing a future year and find out what the CO2 emissions per capita will be then if the countries emissions continue with
           the rate of the last 20 years. All data was found from The World Bank. </p>
 
@@ -99,6 +99,7 @@ class App extends Component {
                           My prediction: {calculateFuturePolution(this.state.prediction, a, b)} metric tons per capita
                        </h1>
                        <button onClick={this.InvertCountry(name)}> Done! </button>
+
                   </div>
                 )
               : undefined}
