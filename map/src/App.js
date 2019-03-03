@@ -9,11 +9,11 @@ class App extends Component {
     isPolutionDetailOpen: false,
     prediction: 0
   }
+  // This is useless
   render() {
     return (
 
-
-
+s
     <div>
       <head>
         <title> Interactive Map and CO2 Emissions </title>
